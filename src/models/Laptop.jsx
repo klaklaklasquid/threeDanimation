@@ -150,13 +150,13 @@ export default function Laptop({ position }) {
               material={nodes.Circle003_1.material}
             />
           </group>
-        </group>
-        <group>
-          <Html position={[-1, 2.5, 0]} rotateX={10}>
-            <iframe
-              className="laptop__screen"
-              src="https://smallerscreenfor3danimationklaky.vercel.app"></iframe>
-          </Html>
+          <group>
+            <Html position={[-1, 2.5, 0]} rotateX={10}>
+              <iframe
+                className="laptop__screen"
+                src="https://smallerscreenfor3danimationklaky.vercel.app"></iframe>
+            </Html>
+          </group>
         </group>
       </a.group>
     </Float>
