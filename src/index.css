@@ -1,0 +1,73 @@
+*,
+*::after,
+*::before {
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle, #e0c8a0 0%, #8b5a2b 100%);
+}
+
+.bottomSection {
+  width: 400px;
+  height: 100px;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.leftButton {
+  height: 80px;
+  width: 80px;
+  background-color: green;
+  clip-path: polygon(
+    40% 0%,
+    40% 20%,
+    100% 20%,
+    100% 80%,
+    40% 80%,
+    40% 100%,
+    0% 50%
+  );
+}
+
+.rightButton {
+  height: 80px;
+  width: 80px;
+  clip-path: polygon(
+    0% 20%,
+    60% 20%,
+    60% 0%,
+    100% 50%,
+    60% 100%,
+    60% 80%,
+    0% 80%
+  );
+}
+
+.btnColor {
+  background-color: #00000043;
+  transition: 0.1s;
+
+  &:hover {
+    background-color: #ff000043;
+  }
+
+  &:active {
+    transform: scale(1.05);
+  }
+}
