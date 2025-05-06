@@ -71,3 +71,8 @@ html {
     transform: scale(1.05);
   }
 }
+
+.laptop__screen {
+  border: none;
+  width: 25rem;
+}

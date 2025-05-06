@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { Float, useGLTF } from "@react-three/drei";
+import { Float, Html, useGLTF } from "@react-three/drei";
 import { a, useSpring } from "@react-spring/three";
 
 export default function Laptop({ position }) {
@@ -150,6 +150,13 @@ export default function Laptop({ position }) {
               material={nodes.Circle003_1.material}
             />
           </group>
+        </group>
+        <group>
+          <Html position={[-1, 2.5, 0]} rotateX={10}>
+            <iframe
+              className="laptop__screen"
+              src="https://smallerscreenfor3danimationklaky.vercel.app"></iframe>
+          </Html>
         </group>
       </a.group>
     </Float>
